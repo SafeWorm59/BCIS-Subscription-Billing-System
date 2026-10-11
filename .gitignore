@@ -1,0 +1,27 @@
+
+node_modules/
+dist/
+out/
+release/
+coverage/
+**/.vite/
+**/.cache/
+*.tsbuildinfo
+*.log
+.eslintcache
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Local databases and backups
+*.dump
+*.backup
+*.bak
+backups/
+attachments/
+
+# Local IDE files
+.vscode/*
+!.vscode/extensions.json

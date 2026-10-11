@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791546968709,
+      "tag": "0000_melodic_mister_fear",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791549754319,
+      "tag": "0001_old_spiral",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791621275278,
+      "tag": "0002_whole_sway",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791636126781,
+      "tag": "0003_ambiguous_loki",
+      "breakpoints": true
+    }
+  ]
+}

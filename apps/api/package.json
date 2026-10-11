@@ -1,0 +1,36 @@
+{
+  "name": "@bcis/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "db:check": "tsx src/db/check.ts",
+    "db:seed:dev": "tsx src/db/seed-development.ts",
+    "db:backup": "tsx src/db/backup.ts",
+    "db:restore": "tsx src/db/restore.ts",
+    "db:generate": "drizzle-kit generate --config drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config drizzle.config.ts",
+    "db:migrate:test": "drizzle-kit migrate --config drizzle.integration.config.ts",
+    "test:integration": "vitest run --config vitest.integration.config.ts"
+  },
+  "dependencies": {
+    "@bcis/shared": "1.0.0",
+    "argon2": "^0.45.1",
+    "dotenv": "^16.6.1",
+    "drizzle-orm": "^0.45.4",
+    "fastify": "^5.12.5",
+    "pg": "^8.16.3",
+    "zod": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}
